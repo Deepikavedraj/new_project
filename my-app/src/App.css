@@ -1,0 +1,79 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400;600&family=Lobster&display=swap');
+
+
+:root{
+  --primary-text:#ff9800;
+  --secondary-text:rgb(148, 158, 241);
+  --text-white:white;
+  --text-grey:rgb(168, 167, 167);
+  --text-danger:rgb(204, 23, 23);
+  --bg-green:rgb(83, 241, 83);
+  --bg-red:rgb(204, 23, 23);
+  --bg-voilet:rgb(148, 158, 241);
+}
+
+body,
+html{
+  font-size:10px;
+  margin:0;
+  padding:0;
+
+}
+
+h1{
+  font-size:3.5rem;
+  text-align: center;
+  color:var( --primary-text);
+  font-weight: 700;
+  padding-bottom:1.1rem;
+}
+h5{
+  font-size:2rem;
+  text-align: center;
+ 
+}
+a{
+  color:var(--secondary-text);
+  font-weight: 600;
+  }
+::placeholder{
+  color:var(--text-grey);
+  font-size: 1.4rem;
+}
+.m_background{
+background-image: url(images/loginBack.jpg);
+background-size: cover;
+min-height: 99vh;
+padding: 10rem 0;
+}
+.main_btn{
+  background: var(--primary-text);
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var( --text-white);
+    width: 88%;
+    margin: 1.5rem 0 0 2rem;
+    box-shadow: 0 0 1rem 0 var(--primary-text);
+}
+
+.main_section .content{
+  padding: 1.5rem 2rem;
+}
+.main_section .content .form-control{
+  padding: 1.2rem 0.6rem;
+  border: 0;
+  border-radius: .6rem;
+  box-shadow: 0 0 .5rem 0 var(--text-grey);
+}
+.main_section .content_bottom_part p{
+  font-size: 1.3rem;;
+}
+.main_section .content_bottom_part p span{
+  font-weight: 600;
+}
+.main_section .content_bottom_part .forgetpass{
+  margin-left:-15%;
+}
