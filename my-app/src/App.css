@@ -5,13 +5,15 @@
 
 :root{
   --primary-text:#ff9800;
-  --secondary-text:rgb(148, 158, 241);
+  --secondary-text:rgb(149, 158, 241);
   --text-white:white;
   --text-grey:rgb(168, 167, 167);
   --text-danger:rgb(204, 23, 23);
   --bg-green:rgb(83, 241, 83);
   --bg-red:rgb(204, 23, 23);
   --bg-voilet:rgb(148, 158, 241);
+  --bg-grey:rgb(214, 214, 214);
+  --text-dark:rgb(2, 2, 2);
 }
 
 body,
@@ -22,6 +24,18 @@ html{
 
 }
 
+.fw_20{
+  font-size:2rem!important;
+}
+.fw_15{
+  font-size: 1.5rem!important;
+}
+.primary{
+  color:var(--primary-text);
+}
+.danger{
+  color:var(--text-danger);
+}
 h1{
   font-size:3.5rem;
   text-align: center;
@@ -32,18 +46,25 @@ h1{
 h5{
   font-size:2rem;
   text-align: center;
- 
+}
+h4{
+  font-size:2rem;
+  color:var( --primary-text); 
 }
 a{
   color:var(--secondary-text);
   font-weight: 600;
+  text-decoration: none;
   }
 ::placeholder{
   color:var(--text-grey);
   font-size: 1.4rem;
 }
+.btn:hover{
+  color:var(--text-white);
+}
 .m_background{
-background-image: url(images/loginBack.jpg);
+background-image: url(images/loginback.jpg);
 background-size: cover;
 min-height: 99vh;
 padding: 10rem 0;
@@ -58,7 +79,22 @@ padding: 10rem 0;
     margin: 1.5rem 0 0 2rem;
     box-shadow: 0 0 1rem 0 var(--primary-text);
 }
+.main_outline{
+  border:1px solid var(--primary-text);
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 95%;
+  margin: 1.5rem 0 0 0rem;
+}
+.main_outline:hover{
+  background: var(--primary-text);
+}
+.profile_btn{
+  width: 96%;
+  margin: 3.5rem 0 0 1rem;
 
+}
 .main_section .content{
   padding: 1.5rem 2rem;
 }
@@ -72,8 +108,357 @@ padding: 10rem 0;
   font-size: 1.3rem;;
 }
 .main_section .content_bottom_part p span{
-  font-weight: 600;
+  font-weight: 700;
 }
 .main_section .content_bottom_part .forgetpass{
   margin-left:-15%;
+}
+
+/* OTP Modal style  */
+
+.modal .modal_content{
+  width: 66%;
+  margin-left: 17%;
+  padding: 1rem;
+  height: 350px;
+  margin-top: 20%;
+}
+.modal .modal_title h1{
+  font-size:2rem;
+}
+.modal .modal_title p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.modal .modal_title h5{
+  font-size: 1.5rem;
+  margin-top: 6%;
+  color: var(--secondary-text);
+}
+.modal .modal_head{
+border:0;
+}
+.modal .content p{
+  font-weight: 600;
+  padding-top: 1.5rem;
+}
+.modal .content span{
+  color:red;
+}
+.modal .content{
+padding:0 1rem;
+}
+
+/* Header Style  */
+
+.nav_header{
+  font-size:2rem;
+background: var(--primary-text);
+width:32.2%;
+padding: .8rem 1.6rem;
+color:var(--text-white);
+position: fixed;
+top: 0;
+}
+.nav_header h5{
+  text-align: left;
+}
+.nav_header p{
+ font-size: 1rem;
+}
+.slider img{
+  width:100%;
+  margin-top: 2%;
+}
+
+/* game content */
+.watch{
+  margin-left:11rem;
+}
+hr.border{
+  border:2px solid orange;
+}
+.content_bottom_part{
+padding-bottom: 10rem;
+}
+.outer_box{
+margin-top:-2%;
+margin-bottom: 3%;
+}
+.grey_background{
+  background-color: var( --bg-grey);
+}
+.content_bottom_part .balance h5{
+  font-size:1.5rem;
+}
+.content_bottom_part .balance h4{
+color:var(--primary-text);
+font-size: 2rem;
+font-weight: 700;   
+margin-left: 0.9rem;
+}
+.content_bottom_part .rupee_img{
+  width:11rem;
+}
+.parity_record .nav-pills .nav-link.active{
+color:var(--text-white);
+background:var(--primary-text);
+cursor: pointer;
+border-bottom: 2px solid var(--text-white);
+}
+.parity_record .nav-pills .nav-link{
+  color:var(--text-white);
+  font-weight: 600;
+  padding: 1rem 0 0 0;
+  cursor: pointer;
+}
+.parity_record .nav{
+justify-content: space-around;
+}
+.parity_record{
+  background: var(--primary-text);
+  width: 100%;
+}
+.join_green{
+  background: var(--bg-green);
+    padding: 1rem 0.5rem;
+    font-size:1.5rem;
+    font-weight: 600;
+    color: var( --text-white);
+    width: 95%;
+    box-shadow: 0 0 1rem 0 var(--primary-text);
+}
+.join_red{
+  background: var(--text-danger);
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var( --text-white);
+    width: 95%;
+    box-shadow: 0 0 1rem 0 var(--text-danger);
+}
+.join_violet{
+  background: var(--bg-voilet);
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var( --text-white);
+    width: 100%;
+    box-shadow: 0 0 1rem 0 var(--bg-voilet);
+}
+.num12{
+  background-image: linear-gradient(to left , var(--bg-voilet),var(--bg-red));
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var( --text-white);
+  width:100%;
+  box-shadow: 0 0 1rem 0 var(--bg-voilet);
+}
+.num23{
+  background-image: linear-gradient(to left , var(--bg-voilet),var(--bg-green));
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var( --text-white);
+  width:100%;
+  box-shadow: 0 0 1rem 0 var(--bg-voilet);
+}
+.num1{
+  background: var(--bg-green);
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var( --text-white);
+    width:100%;
+    box-shadow: 0 0 1rem 0 var(--bg-green);
+}
+.num2{
+  background: var(--text-danger);
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var( --text-white);
+    width: 100%;
+    box-shadow: 0 0 1rem 0 var(--text-danger);
+}
+
+.green_box{
+  width: 8%;
+  height:10px;
+  background-color: var(--primary-text);
+  margin: 8% auto; 
+}
+.red_box{
+  width: 8%;
+  height:10px;
+  background-color: var(--text-danger);
+  margin: -18% 0 0 6rem;
+}
+.voilet_box{
+  width: 8%;
+  height:10px;
+  background-color: var(--bg-voilet);
+  margin: -18% 0 0 6rem;
+}
+
+
+/* Footer section css */
+.footer{
+  position: fixed;
+  background-color: var(--primary-text);
+  color: var(--text-white);
+  padding:1.3rem 2rem;
+  bottom: 0;
+  width: 33.2%;
+  height: 55px;
+}
+
+.footer .footer_icon p{
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+.footer .footer_icon i{
+  font-size:1.5rem;
+  text-align: center;
+  margin: 0 42%;
+}
+.footer .footer_icon i{
+color: var(--text-white);
+}
+
+/* Profile section */
+.content_bottom_part .margin_top{
+  margin-top: 20%;
+}
+.accordion-button:focus{
+box-shadow:0;
+}
+.accordion-button:not(.collapsed){
+  background-color: var(--text-white);
+}
+
+
+/* Recharage section css */
+
+.rupee{
+  position: absolute;
+  top: 13rem;
+  left: 68rem;
+  font-size:  2.8rem;
+  color: var(--text-white);
+}
+.inner_btn {
+  position: relative;
+  background:var(--primary-text);
+  color: white;
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  float: right;
+  font-size: 10px;
+  margin-top: -20px;
+  left: -5%;
+}
+.content_bottom_part .content .border_b{
+  border-bottom: 1px solid gray;
+  box-shadow: 0 0 0 0!important;
+  border-radius: 0 !important;
+}
+
+/* Profile section */
+
+.slider .client{
+  position: absolute;
+  top: 17rem;
+  left: 55rem;
+  font-size:  2.8rem;
+  color: var(--text-white);
+}
+/* refer earn section css */
+.content_bottom_part .refer_content p{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.content_bottom_part .refer_content h5{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.refer_copy .btn{
+  font-size: 1.2rem;
+  margin-left:37%;
+}
+.content_bottom_part .refer_content .refer_copy h5{
+   color:var(--text-dark);
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+.content_bottom_part .refer_content .refer_copy p{
+  color:var(--text-dark);
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.content_bottom_part .refer_content .content .refer_copy h5{
+color:var(--primary-text);
+}
+.refer_level{ 
+  margin-top: 7%;
+
+}
+.refer_level .nav-pills .nav-link.active{
+  color:var(--text-white);
+  background:var(--primary-text);
+  cursor: pointer;
+  }
+.refer_level .nav{
+    justify-content: space-around;
+    }
+    .refer_level .nav-pills .nav-link{
+      color:var(--text-dark);
+      font-weight: 600;
+      cursor: pointer;
+      width: 14rem;
+      padding: 1rem 4rem;
+      font-size: 1.5rem;
+      border:1px solid var(--primary-text);
+    }
+
+/* Media query for mobile view */
+
+@media only screen and (max-width: 600px) {
+html,
+body{
+  overflow: hidden;
+
+}
+  .nav_header{
+    width: 100%;
+  }
+  .footer{
+    width: 100%;
+  }
+  .container-fluid{
+    padding: 0;
+  }
+  .content_bottom_part .balance h5 {
+    font-size: 1.4rem;
+}
+.content_bottom_part .balance h4 {
+  margin-left: 1.9rem;
+}
+.content_bottom_part{
+  padding: 1rem 1rem 10rem 1rem;
+}
+.watch {
+  margin-left: 4rem;
+  width: 90%;
+}
+.rupee {
+  top: -9.7rem;
+  left: 2rem;
+}
+.recharge_img{
+  width:39rem!important;
+}
 }

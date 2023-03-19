@@ -1,9 +1,10 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 export default function Signin(props) {
   return (
     <>
-    
+  
 
     <div className="col-md-4 col-lg-4 col-12">
               <div className="card m_background">
@@ -33,14 +34,59 @@ export default function Signin(props) {
                        
                     </div>
                      
-                       <a href="/" className="btn main_btn">{props.tophead}</a>
+                       <a href="/" className="btn main_btn" data-bs-toggle="modal" data-bs-target="#signin">{props.tophead}</a>
 
-                       <p class="text-center mt-4 fw-bold">Already a member? <a href="/"><span>Login</span></a></p>
+                       <p class="text-center mt-4 fw-bold">Already a member? <Link to="/login"><span>Login</span></Link></p>
                    </div>
                </div>
              </div>
           </div>
 
+
+{/* OTP Verifaction Modal*/}
+
+<div className="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content modal_content">
+      <div className="modal-header modal_head">
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body modal_title">
+      <h1>OTP Verifaction</h1>
+      <p>Please enter the 4 digit verification code
+          we just sent you on your device</p>
+          <form>
+          <div class="content">
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter OTP" />
+              <p>Time left : <span>00 : 40</span></p>
+          </div>
+          <Link to="/index" className="btn main_btn" data-bs-toggle="modal" data-bs-target="#congrates">Submit</Link>
+            <h5>Resend</h5>
+          </form>
+      </div>
+   
+    </div>
+  </div>
+</div>
+
+
+{/* Congrates Modal*/}
+
+<div className="modal fade" id="congrates" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content modal_content">
+      <div className="modal-header modal_head">
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body modal_title">
+      <h1>Congratulations</h1>
+      <p>Your account has been successfully created</p>
+          
+      </div>
+   
+    </div>
+  </div>
+</div>
     </>
   )
 }

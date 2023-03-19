@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 export default function Changepassword(props) {
   return (
@@ -20,7 +21,7 @@ export default function Changepassword(props) {
                 
                        <a href="/" className="btn main_btn">Submit</a>
 
-                       <p class="text-center mt-4 fw-bold">Back to login ? <a href="/"><span>Login</span></a></p>
+                       <p class="text-center mt-4 fw-bold">Back to login ? <Link to="/login"><span>Login</span></Link></p>
                  
                </div>
              </div>
