@@ -80,7 +80,7 @@ function App() {
       </BrowserRouter>
       
       {/* <Header headerhead="Colors"/> */}
-      <div className="col-md-4 col-lg-4"></div>
+      <div className="col-md-4 col-lg-4">vikash</div>
         </div>
       </div>
       
