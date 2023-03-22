@@ -19,20 +19,21 @@ export default function Footer() {
     </div>
     <div className="col-md-2 col-2">
       <div className="footer_icon">
-      <i class="fa fa-share-alt" aria-hidden="true"></i>
-      <a href="/"><p className="text-white">Refer</p></a>
+      <Link to="/referearn"><i class="fa fa-share-alt" aria-hidden="true"></i>
+      <p className="text-white">Refer</p></Link>
       </div>
     </div>
     <div className="col-md-2 col-2">
       <div className="footer_icon">
-      <Link to="/index"><i class="fa fa-home" aria-hidden="true"></i>
-      <p className="text-white">Home</p></Link>
+      <Link to="/home"><i class="fa fa-home" aria-hidden="true"></i>
+      <p className="text-white">Home </p></Link>
       </div>
     </div>
     <div className="col-md-2 col-2">
       <div className="footer_icon">
-      <i class="fa fa-database" aria-hidden="true"></i>
-      <a href="/"><p className="text-white">Earn </p></a>
+      <Link to="/index"><i class="fa fa-database" aria-hidden="true"></i>
+      <p className="text-white">Earn</p></Link>
+     
       </div>
     </div>
     <div className="col-md-2 col-2">

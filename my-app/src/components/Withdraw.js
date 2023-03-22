@@ -1,12 +1,13 @@
 import React from 'react'
 import recharge from '../images/recharge_back.png'
+import { Link } from "react-router-dom";
 
 export default function Recharge(props) {
   return (
     <>
      <div className="col-md-4 col-12">
         <div className="nav_header">
-            <h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5>
+        <Link to="/account"><h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5></Link>
         </div>
 
         <div className="slider">

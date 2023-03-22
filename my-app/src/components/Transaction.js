@@ -27,12 +27,12 @@ createData(3, 16/7/2023, 'Total data', 2000),
 
 ];
 
-export default function Rechargehistory(props) {
+export default function Transaction(props) {
   return (
 
      <div className="col-md-4 col-12">
         <div className="nav_header">
-        <Link to="/account"> <h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5></Link>
+           <Link to="/account"> <h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5></Link>
         </div>
 
     <TableContainer component={Paper} className="table_top">

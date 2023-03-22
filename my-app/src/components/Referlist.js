@@ -11,28 +11,28 @@ import { Link } from "react-router-dom";
 
 function createData(
   srno: Number,
-  date: number,
-  particular: string,
-  amount:number,
+  mobile: number,
+  name: string,
+  creatd:number,
  
 ) {
 
-  return { srno, date, particular, amount};
+  return { srno, mobile, name, creatd};
 }
 
 const rows = [
-createData(1, 12/3/2023, 'Total particular', 1000),
-createData(2, 15/4/2023, 'Total number', 2000),
-createData(3, 16/7/2023, 'Total data', 2000),
+createData(1, 9898989898, 'Abhisekh', 15/4/2023),
+createData(2, 9898989898, 'Deepika', 16/5/2023),
+createData(3, 9797979797, 'Kavita', 17/7/2023),
 
 ];
 
-export default function Rechargehistory(props) {
+export default function Referlist(props) {
   return (
 
      <div className="col-md-4 col-12">
         <div className="nav_header">
-        <Link to="/account"> <h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5></Link>
+           <Link to="/account"> <h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5></Link>
         </div>
 
     <TableContainer component={Paper} className="table_top">
@@ -40,9 +40,9 @@ export default function Rechargehistory(props) {
         <TableHead>
           <TableRow>
           <TableCell align="center">Sr.No</TableCell>
-          <TableCell align="center">Date</TableCell>
-          <TableCell align="center">Particular</TableCell>
-          <TableCell align="center">Amount</TableCell>
+          <TableCell align="center">Mobile</TableCell>
+          <TableCell align="center">Name</TableCell>
+          <TableCell align="center">Created Date</TableCell>
        
           </TableRow>
         </TableHead>
@@ -54,9 +54,9 @@ export default function Rechargehistory(props) {
             >
             
               <TableCell>{row.srno}</TableCell>
-              <TableCell>{row.date}</TableCell>
-              <TableCell>{row.particular}</TableCell>
-              <TableCell>{row.amount}</TableCell>
+              <TableCell>{row.mobile}</TableCell>
+              <TableCell>{row.name}</TableCell>
+              <TableCell>{row.creatd}</TableCell>
             </TableRow>
           ))}
         </TableBody>

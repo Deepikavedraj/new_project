@@ -16,7 +16,11 @@ import Rechargehistory from './components/Rechargehistory';
 import Withdraw from './components/Withdraw';
 import Withdrawhistory from './components/Withdrawhistory';
 import Referearn from './components/Referearn';
-
+import Transaction from './components/Transaction';
+import Bankcard from './components/Bankcard';
+import Home from './components/Home';
+import Referlist from './components/Referlist';
+import Fundhistory from './components/Fundhistory';
 
 function App() {
   return (
@@ -74,6 +78,21 @@ function App() {
       </Route>
 
       <Route path="/referearn" element={<><Referearn headerhead="Refer & Earn" /><Footer /></>}>
+      </Route>
+
+      <Route path="/transaction" element={<><Transaction headerhead="Transaction" /><Footer /></>}>
+      </Route>
+
+      <Route path="/bankcard" element={<><Bankcard headerhead="Bank Card" /><Footer /></>}>
+      </Route>
+
+      <Route path="/home" element={<><Home headerhead="Color" /><Footer /></>}>
+      </Route>
+
+      <Route path="/referlist" element={<><Referlist headerhead="Refer List" /><Footer /></>}>
+      </Route>
+
+      <Route path="/fundhistory" element={<><Fundhistory headerhead="Fund Transfer History" /><Footer /></>}>
       </Route>
 
       </Routes>

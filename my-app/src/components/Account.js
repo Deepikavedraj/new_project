@@ -59,7 +59,7 @@ export default function Profile(props) {
        <hr></hr>
             <div className="row">
                     <div className="col-12">
-                        <a href="/"><p className="text-dark ms-3"><i class="fa fa-folder-open" aria-hidden="true"></i> TRANSACTION</p></a>
+                        <Link to="/transaction"><p className="text-dark ms-3"><i class="fa fa-folder-open" aria-hidden="true"></i> TRANSACTION</p></Link>
                     </div>
                 </div>
                 <hr></hr>
@@ -77,10 +77,10 @@ export default function Profile(props) {
                 </div>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body"> 
-                  <a href="/"><p className="text-dark">REFER LIST</p></a>
+                  <Link to="/referlist"><p className="text-dark">REFER LIST</p></Link>
                 </div>
                 </div>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                {/* <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body"> 
                   <a href="/"><p className="text-dark">APPLY BONUS</p></a>
                 </div>
@@ -89,18 +89,23 @@ export default function Profile(props) {
                 <div class="accordion-body"> 
                   <a href="/"><p className="text-dark">BONUS RECORDS</p></a>
                 </div>
-                </div>
+                </div> */}
             </div>
             
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  <p className="text-dark"><i class="fa fa-file-text" aria-hidden="true"></i> FUND TRANSFER</p>
+                  <a href="/"><p className="text-dark"><i class="fa fa-file-text" aria-hidden="true"></i> FUND TRANSFER</p></a>
                 </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
+                   <div class="accordion-body">
                     <Link to="/fundtransfer"><p className="text-dark"> FUND TRANSFER</p></Link>
+                    </div>
+                </div>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                   <div class="accordion-body">
+                    <Link to="/fundhistory"><p className="text-dark"> FUND TRANSFER HISTORY</p></Link>
                     </div>
                 </div>
             </div>
@@ -108,7 +113,7 @@ export default function Profile(props) {
             <hr></hr>
             <div className="row">
                     <div className="col-12">
-                        <a href="/"><p className="text-dark ms-3 p-2"><i class="fa fa-address-card" aria-hidden="true"></i> BANK CARD</p></a>
+                        <Link to="/bankcard"><p className="text-dark ms-3 p-2"><i class="fa fa-address-card" aria-hidden="true"></i> BANK CARD</p></Link>
                     </div>
                     <hr></hr>
                     <div className="col-12">

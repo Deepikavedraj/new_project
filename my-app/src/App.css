@@ -90,6 +90,21 @@ padding: 10rem 0;
 .main_outline:hover{
   background: var(--primary-text);
 }
+.danger_btn{
+  background:var(--text-danger);
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 95%;
+  margin: 1.5rem 0 0 0rem;
+  color: var(--text-white);
+}
+.modal_footer{
+  padding: 1rem 2rem 3rem 2rem;
+}
+.danger_btn:hover{
+  background: var(--text-danger);
+}
 .profile_btn{
   width: 96%;
   margin: 3.5rem 0 0 1rem;
@@ -160,6 +175,9 @@ color:var(--text-white);
 position: fixed;
 top: 0;
 }
+.nav_header a{
+  color: var(--text-white);
+}
 .nav_header h5{
   text-align: left;
 }
@@ -172,6 +190,37 @@ top: 0;
 }
 
 /* game content */
+.mg_head{
+  background: var(--bg-green);
+  color:var(--text-white);
+}
+.labelContainer {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.labelContainer>label {
+  padding: 10px 30px !important;
+  border: none !important;
+  box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  margin-right: 20px !important;
+  margin-left: 0 !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.labelContainer>label>input {
+  margin: 0 !important;
+  position: relative !important;
+  margin-right: 10px !important;
+}
+.mg-dialog{ 
+  max-width: 418px;
+}
+.labelContainer>label span{
+  font-size:1.5rem;
+}
 .watch{
   margin-left:11rem;
 }
@@ -286,7 +335,7 @@ justify-content: space-around;
 .green_box{
   width: 8%;
   height:10px;
-  background-color: var(--primary-text);
+  background-color: var(--bg-green);
   margin: 8% auto; 
 }
 .red_box{
@@ -424,6 +473,15 @@ color:var(--primary-text);
       border:1px solid var(--primary-text);
     }
 
+    /* table section css */
+    .table_top{
+      margin-top:10%;
+    }
+    .css-1ndpvdd-MuiTableCell-root{
+       font-size:1.5rem !important;
+    }
+
+     /* table section css */
 /* Media query for mobile view */
 
 @media only screen and (max-width: 600px) {

@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 
 export default function Referearn(props) {
   return (
     <>
      <div className="col-md-4 col-12">
         <div className="nav_header">
-            <h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5>
+        <Link to="/account"> <h5><i class="fa fa-angle-left" aria-hidden="true"></i> {props.headerhead}</h5></Link>
         </div>
 
         <div className="content_bottom_part pt-5">
