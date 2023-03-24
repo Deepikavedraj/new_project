@@ -30,7 +30,7 @@ function App() {
         <div className="row">
           <div className="col-md-4 col-lg-4"></div> 
      <BrowserRouter>
-  <Routes>
+        <Routes>
   
 
       <Route path="/login" element={<Login topheading="Login"  para="Welcome to Color Prediction Game" mobile="*Mobile Number or E-mail" 
