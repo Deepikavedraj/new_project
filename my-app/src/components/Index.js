@@ -4,8 +4,31 @@ import rupee1 from '../images/rupee.png';
 import crown1 from '../images/crown.png';
 import watch1 from '../images/watch.png';
 import { Link } from "react-router-dom";
+import {useState} from "react";
 
 export default function Header(props) {
+
+// Increament & decreament code
+
+let [num, setNum]= useState(0);
+let incNum =()=>{
+  if(num<10)
+  {
+  setNum(Number(num)+1);
+  }
+};
+let decNum = () => {
+   if(num>0)
+   {
+    setNum(num - 1);
+   }
+}
+let handleChange = (e)=>{
+ setNum(e.target.value);
+}
+
+
+
   return (
    <>
    <div className="col-md-4 col-12">
@@ -581,9 +604,20 @@ export default function Header(props) {
             </div>
             <p className="fw_15 fw-bold">Total contract money is: 10</p>
             <h5 className="multi text-start">Multiples</h5>
-            <div className="d-md-block d-lg-block d-sm-none d-none content">
+            {/* <div className="d-md-block d-lg-block d-sm-none d-none content">
                 <input type="number" className="form-control" name="multiples" value="1" min="1" max="999" />
+            </div> */}
+            <div className="col-md-12">
+              <div class="input-group content">
+              <div class="input-group-prepend">
+                <button class="btn btn-warning p-4" type="button" onClick={decNum}>-</button>
+              </div>
+              <input type="text" class="form-control fw_15" value={num} onChange={handleChange}/>
+              <div class="input-group-prepend">
+                <button class="btn btn-warning p-4" type="button" onClick={incNum}>+</button>
+              </div>
             </div>
+        </div>
       </div>
       <div className="modal_footer">
         <div className="row">
