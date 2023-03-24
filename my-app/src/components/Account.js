@@ -125,7 +125,7 @@ export default function Profile(props) {
                     </div>
                     <hr></hr>
                     <div className="col-12">
-                        <a href="/"><p className="text-dark ms-3 p-2"><i class="fa fa-sign-out" aria-hidden="true"></i> SIGN OUT</p></a>
+                        <Link to="/login"><p className="text-dark ms-3 p-2"><i class="fa fa-sign-out" aria-hidden="true"></i> SIGN OUT</p></Link>
                     </div>
                 </div>
 

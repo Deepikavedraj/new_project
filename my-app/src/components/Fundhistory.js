@@ -9,6 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Link } from "react-router-dom";
 
+
 function createData(
   srno: Number,
   mobile: number,
@@ -28,6 +29,7 @@ createData(3, 9797979797, 'Kavita', 17/7/2023),
 ];
 
 export default function Fundhistory(props) {
+ 
   return (
 
      <div className="col-md-4 col-12">
@@ -62,6 +64,17 @@ export default function Fundhistory(props) {
         </TableBody>
       </Table>
     </TableContainer>
+
+    {/* <div className="main_div">
+  <div className="center_div">
+    <h4>0</h4>
+    <div className="btn_div">
+      <button>Increm</button>
+      <button>Increm</button>
+    </div>
+  </div>
+</div> */}
+
 
     </div>
   );
