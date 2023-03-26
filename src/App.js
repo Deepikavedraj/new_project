@@ -33,7 +33,7 @@ function App() {
         <Routes>
   
 
-      <Route path="/login" element={<Login topheading="Login"  para="Welcome to Color Prediction Game" mobile="*Mobile Number or E-mail" 
+      <Route path="/login" element={<Login topheading="Login" headinggoogle="Login with Google Account" headinggoogle="Login with Facebook Account" para="Welcome to Color Prediction Game" mobile="*Mobile Number or E-mail" 
            password="*Password" />}>
 
       </Route>

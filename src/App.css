@@ -87,6 +87,47 @@ padding: 10rem 0;
   width: 95%;
   margin: 1.5rem 0 0 0rem;
 }
+.google_btn{
+  background: var(--text-white);
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var( --text-grey);
+  width: 88%;
+  text-align: left;
+  margin: 1.5rem 0 2rem 2rem;
+  box-shadow: 0 0 .4rem 0 var(--text-grey);
+}
+.facebook_btn{
+background: #738af8;
+padding: 1rem 0.5rem;
+font-size: 2rem;
+font-weight: 600;
+text-align: left;
+color: var( --text-white);
+width: 88%;
+margin: 1.5rem 0 0 2rem;
+box-shadow: 0 0 .4rem  0 var(--text-grey);
+}
+.google_btn:hover{
+color: var(--text-dark);
+}
+.facebook_btn:hover{
+color: var(--text-white);
+box-shadow: 0 0 1rem  0 #738af8;
+}
+.content_bottom_part .google_btn i{
+font-size: 6rem;
+padding: 0rem 1rem;
+background:linear-gradient(rgb(255, 188, 4),rgb(250, 250, 12), rgb(2, 238, 2),rgb(3, 3, 250));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.content_bottom_part .facebook_btn i{
+font-size: 6rem;
+  padding: 0rem 1rem;
+  color: var(--text-white);
+}
 .main_outline:hover{
   background: var(--primary-text);
 }
